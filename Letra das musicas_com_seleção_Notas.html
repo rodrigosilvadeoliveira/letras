@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Porta da Vida</title>
+</head>
+<body>
+
+<img src ="Capa porta da vida.jpg" width="300" height="200" align="left">
+<h1 align="left">Letras Banda Porta da Vida</h1>
+<select name="letras" id="letras" onchange="startLetra()">
+  <option value="musica0" selected>Musicas</option>
+  <option value="musica12">Caminho</option>
+  <option value="musica1">Compaixão</option>
+  <option value="musica2">Descobri em ti</option>
+  <option value="musica3">Eternidade</option>
+  <option value="musica4">Filho de Davi</option>
+  <option value="musica5">Inimigo</option>  
+  <option value="musica6">Passageiro</option>  
+  <option value="musica7">Posso Confiar</option>
+  <option value="musica8">Posso Viver</option>
+  <option value="musica9">Pregador</option>
+  <option value="musica10">Quem realmente sou</option>
+  <option value="musica11">Viver o amor</option>
+  <option value="musica12">Volte</option>
+
+</select>
+
+</body>
+</html>
+
+
+<script>
+/*
+function display_image(src, width, height, align, alt) {
+    var a = document.createElement("img");
+    a.src = src;
+    a.width = width;
+    a.height = height;
+    a.align = align;
+    a.alt = alt;
+    
+    document.body.appendChild(a);
+}
+display_image('Capa porta da vida.jpg', 
+                 300, 
+                 200, 
+                 'left',
+                 'JavaScriptImage');
+
+*/
+ function pulaLinha() {
+
+        document.write("<br><br>");
+    }
+    function refreshPage(){
+    window.location.reload();
+}
+
+
+    function mostra(frase) {
+    
+        document.write(frase);
+        pulaLinha();
+        document.write("<button id= button onclick=refreshPage()>Nova pesquisa</button>");
+        
+    }
+
+    function startLetra(){
+
+    let select = document.querySelector("#letras");
+    let optionValue = select.options[select.selectedIndex];
+
+    let value = optionValue.value;
+    let text = optionValue.text;
+
+    if (text == "Quem realmente sou"){
+
+    mostra("<h3 align=center>"+"Musica:"+"</h3>"+"<p align=center"+" Quem realmente sou"+ "<br><br>" + 
+      " Me faz conhecer os meus dias"  + "<br>" +
+       "e o meu fim" + "<br>" + " pra que eu possa sentir" + "<br>" + 
+       "Quaõ fragil sou"+ "<br>" + "Me faz enchegar Senhor" +"<br>" + 
+       "Quem realmente sou 2x " + "<br><br>" + 
+       "Nem riquezas ou bens nesta Vida" + "<br>" + 
+       "me faram ser maior do que sou" + "<br>" + 
+       "Só diante da sua presença" + "<br>" + 
+       "Livre sou" + "<br>" + 
+       "Miserável homem sei que sou" + "<br>" +
+       "<a href=https://www.youtube.com/watch?v=j4nhLGldZvM>Acesse a Musica Quem realmente sou</a>"+"</p>");
+
+   } else if(text == "Inimigo"){
+    mostra("<h3>"+"Musica:"+"</h3>"+" Inimigo"+ "<br><br>" +
+    "Acreditava ser tão fácil me enganar"+ "<br>" +
+    "Criava armadilhas pra me derrubar"+ "<br>" +
+    "Achava que eu não iria perceber"+ "<br>" +
+    "Que o causador da minha dor era você"+ "<br>" +
+    "Desde o princípio de toda a criação"+ "<br>" +
+    "Enganaste a Eva e Adão"+ "<br>" +
+    "Mas esqueceste daquele o criador"+ "<br>" +
+    "Ele mesmo na cruz te derrotou"+ "<br><br>" +
+
+    "E ao ressuscitar no terceiro dia"+ "<br>" +
+    "Mostrou que aquela cruz já está vazia"+ "<br>" +
+    "Bastou apenas o seu sacrifício"+ "<br>" +
+    "Para libertar a humanidade do seu precipício"+ "<br><br>" +
+
+    "Não, não, não quero mais a vida que você me deu"+ "<br>" +
+
+    "Não, não, não quero mais uma vida de ilusão"+ "<br>" +
+
+    "Não, não, quero viver uma vida sem escravidão" );
+  }
+
+
+    else if(text == "Passageiro"){
+    mostra("<h3>"+"Musica:"+"</h3>"+" Passageiro"+ "<br><br>" +
+    "Passageiro de algum lugar"+ "<br>" +
+    "tua passagem comprada está"+ "<br>" +
+    "a dois caminhos a saber"+ "<br>" +
+    "morte ou vida qual vai escolher?"+ "<br><br>" +
+    "Escolha a vida, ao lado de Jesus"+ "<br>" +
+    "escolha a vida, Ele morreu na cruz"+ "<br>" +
+    "escolha a vida, para se libertar da morte eterna");
+  }
+
+    else if(text == "Compaixão"){
+    mostra("<h3>"+"Musica:"+"</h3>"+"Compaixão"+ "<br><br>" +
+    "Aqui o Filho envio, Glórias eternas ao Senhor,"+ "<br>" +
+    "Por morrer em meu lugar, e a vida eterna nos dar,"+ "<br>" +
+    "Espírito Santo consolador, nos conforta e nos dá amor,"+ "<br>" +
+    "Teu perdão nos alcançou, e da escravidão nos libertou."+ "<br><br>" +
+    "Glórias ao Senhor, pelo Seu amor,"+ "<br>" +
+    "Glórias ao Senhor, pelo Seu amor,"+ "<br>" +
+    "Glórias ao Senhor!");
+  }
+
+  else if(text == "Filho de Davi"){
+    mostra("<h3>"+"Musica:"+"</h3>"+"Filho de Davi"+ "<br><br>" +
+    "Já corri atrás de tantos sonhos,"+ "<br>" +
+    "que em pesadelos muitos se tornaram,"+ "<br>" +
+    "minha vida entrou em desespero,"+ "<br>" +
+    "achava certo o que era errado,"+ "<br>" +
+    "achava certo ficar,achava certo mentir,"+ "<br>" +
+    "achava certo enganar,achava certo roubar,"+ "<br>" +
+    "achava certo fingir, achava certo fugir, de Você."+ "<br><br>" +
+
+    "Tudo que começa um dia acaba,"+ "<br>" +
+    "meu desespero não chegou ao fim,"+ "<br>" +
+    "sei muito bem o que me espera,"+ "<br>" +
+    "oh Jesus Cristo tem pena de mim!"+ "<br>" +
+
+    "Filho de Davi, Filho de Davi, Filho de Davi."+ "<br><br>"
+);
+  }
+
+    else if(text == "Pregador"){
+    mostra("<h3>"+"Musica:"+"</h3>"+"Pregador"+ "<br><br>" +
+    "Apesar dos seus defeitos Ele te escolheu,"+ "<br>" +
+    "para levar a mensagem que Ele mesmo deu,"+ "<br>" +
+    "o Seu único filho Ele enviou, "+ "<br>" +
+    "para livrar o mundo de um fim de horror,"+ "<br>" +
+    "morreu na cruz em meu lugar, tamanha dor sofreu para nos salvar."+ "<br><br>" +
+
+    "Deixe de ouvir e leve a mensagem,"+ "<br>" +
+    "pessoas passam todo dia pela cidade,"+ "<br>" +
+    "e você aí parado só ouvindo,"+ "<br>" +
+    "pessoas passam todo dia pelo seu caminho,"+ "<br>" +
+    "o que custa falar quem é Jesus Cristo,"+ "<br>" +
+    "será vergonha medo, ou o inimigo,"+ "<br>" +
+    "da sua alma, da sua vida."
+);
+
+  }
+
+    else if(text == "Viver o amor"){
+    mostra("<h3>"+"Musica:"+"</h3>"+"Viver o amor"+ "<br><br>" +
+    "Quem não conhece a Deus,"+ "<br>" +
+    "não sabe o que é o amor,"+ "<br>" +
+    "quem não conhece a Deus,"+ "<br>" +
+    "não sabe o amor que me libertou."+ "<br><br>" +
+
+    "Viver o amor, é ter consolo em meio a dor,"+ "<br>" +
+    "Prova de amor, Ele morreu na cruz por mim, por amor."+ "<br><br>" +
+
+    "Quem já conhece a Deus, já vivi esse amor,"+ "<br>" +
+    "Quem já conhece a Deus, já vivi o amor que me libertou."+ "<br><br>" +
+
+    "Viver o amor, é ter consolo em meio a dor,"+ "<br>" +
+    "Prova de amor, Ele morreu na cruz por mim, por amor."
+);
+
+  }
+  else if(text == "Descobri em ti"){
+    mostra("<h3>"+"Musica:"+"</h3>"+"Descobri em ti"+ "<br><br>" +
+    "Descobri em ti,"+ "<br>" +
+    "Um novo modo de vida,"+ "<br>" + 
+    "Tu mudaste e curas-te, todas feridas."+ "<br><br>" + 
+    "A vitória é garantida, receba a nova vida em Deus"+ "<br><br>" +
+    
+    "A vitória é do senhor, e do seu consolador"+ "<br>" +
+    "Espirtio de vida renova a cada dia e me leva ao lado do Pai"+ "<br><br>" +
+
+    "Ao teu lado encontro amor,"+ "<br>" +
+    "Ao teu lado encontro paz,"+ "<br>" +
+
+    "Ao teu lado encontro vida e alegria."
+);
+ }   else if(text == "Eternidade"){
+    mostra("<h3>"+"Musica:"+"</h3>"+"Eternidade"+ "<br><br>" +
+
+"A Noite já vem,"+ "<br>" +
+"Trazendo a alguém,"+ "<br>" +
+"A Chance não mais"+ "<br>" +
+"De voltar Atrás,"+ "<br>" +
+"Será que O verei"+ "<br>" +
+"na Gloria de Deus"+ "<br>" +
+"O Santo Lugar"+ "<br>" +
+"Jesus foi preparar;"+ "<br><br>" +
+
+"De que adiantou"+ "<br>" +
+"O mundo inteiro Ganhar,"+ "<br>" +
+"Se não dá pra levar"+ "<br><br>" +
+"Quando minha hora chegar;"+ "<br><br>" +
+
+"Por amor a Mim quem perder sua vida"+ "<br>" +
+"Na Eternidade encontrara mais vida"+ "<br>" +
+"Jesus Cristo a única saída,"+ "<br>" +
+"Entregue a Ele a sua vida;"+ "<br><br>" +
+
+"Pois todo olho um dia o verá"+ "<br>" +
+"Todo joelho se dobrará"+ "<br>" +
+"Mesmo pra quem não acreditar"+ "<br>" +
+"Vai chegar eternidade"+ "<br>" +
+"Vai chegar "+ "<br><br>" +
+
+"Pois todo olho um dia o verá"+ "<br>" +
+"Todo joelho se dobrará"+ "<br>" +
+"Mesmo pra quem não acreditar"+ "<br>" +
+"Vai chegar Vai chegar "+ "<br>" +
+"Num piscar de um olhar."+ "<br>"
+);
+} else if(text == "Posso Viver"){
+    mostra("<h3>"+"Musica:"+"</h3>"+"Posso Viver"+ "<br><br>" +
+
+"Intro: Bm | Bm | A | Bm | G | Bm | A "+ "<br>" +
+"Em | G | Bm | A | Em | G | Bm | A | Em | G G F#m  F#m A A G G | "+ "<br><br>" +
+"Bm" + "<br>" +
+"Meus caminhos planejados estão,"+ "<br>" +
+"A | Em " + "<br>" +
+"Sei agora Senhor que estou em suas mãos"+ "<br>" +
+"G" + "<br>" +
+"Posso Viver"+ "<br>" +
+"Bm" + "<br>" +
+"Por que eu temeria mal algum"+ "<br>" +
+"A | Em " + "<br>" +
+"Se estou Liberto pelo sangue de Jesus"+ "<br>" +
+"G" + "<br>" +
+"Posso Viver"+ "<br>" +
+"A" + "<br>" +
+"Posso Viver"+ "<br><br>" +
+"G | (Bm G A) | A " + "<br><br>" +
+
+"Bm | A" + "<br>" +
+"Posso viver, espero em Você,"+ "<br>" +
+"G | Bm | A" + "<br>" +
+"Posso viver minha vida em Você,"+ "<br>" +
+"G | A" + "<br>" +
+"Posso Viver, confio em Você"+ "<br>" +
+"G | A" + "<br>" +
+"Posso viver"+ "<br><br>" +
+
+
+"Bm" + "<br>" +
+"Meus caminhos planejados estão,"+ "<br>" +
+"A | Em " + "<br>" +
+"Sei agora Senhor que estou em suas mãos"+ "<br>" +
+"G" + "<br>" +
+"Posso Viver"+ "<br>" +
+"Bm" + "<br>" +
+"As promessas de Deus eu sei que não tem fim"+ "<br>" +
+"A | Em " + "<br>" +
+"Algumas delas hoje estão pra se cumprir"+ "<br>" +
+"G" + "<br>" +
+"Posso Viver"+ "<br>" +
+"A" + "<br>" +
+"Posso Viver"+ "<br><br>" +
+"G | (Bm G A) | A " + "<br><br>" +
+
+"Bm | A" + "<br>" +
+"Posso viver, espero em Você,"+ "<br>" +
+"G | Bm | A" + "<br>" +
+"Posso viver minha vida em Você,"+ "<br>" +
+"G | A" + "<br>" +
+"Posso Viver, confio em Você"+ "<br>" +
+"G | A" + "<br>" +
+"Posso viver"+ "<br><br>" +
+
+"(Solo Guitarra) Bm | A | Em | G | Bm | A "+ "<br>" +
+"Em | G G F#m F#m A A G G F#m"+ "<br><br>" +
+
+"G | A" + "<br>" +
+"Sempre foi assim com os que confiaram em Ti,"+ "<br>" +
+"G | A" + "<br>" +
+"Sempre foi assim com os que esperaram em Ti,"+ "<br>" +
+"G | A" + "<br>" +
+"Podiam viver, em Você"+ "<br>" +
+"G | A" + "<br>" +
+"Podiam viver, confiando em Você." + "<br><br>" +
+
+"Bm | A" + "<br>" +
+"Posso viver, espero em Você,"+ "<br>" +
+"G | Bm | A" + "<br>" +
+"Posso viver minha vida em Você,"+ "<br>" +
+"G | A" + "<br>" +
+"Posso Viver, confio em Você"+ "<br>" +
+"G | A" + "<br>" +
+"Posso viver");
+}
+ else if(text == "Caminho"){
+    mostra("<h3>"+"Musica:"+"</h3>"+"Caminho"+ "<br><br>" +
+
+"Eu Procuro um Caminho,"+ "<br>" +
+"Sei que não estou sozinho"+ "<br>" +
+"Vou seguindo a direção;"+ "<br>" +
+"Essa luz que me ilumina,"+ "<br>" +
+"Essa Luz que irradia"+ "<br>" +
+"Em meio a Escuridão."+ "<br><br>" +
+"Sei que posso alcançar"+ "<br>" +
+"Com minha fé vou chegar"+ "<br>" +
+"Muito mais alto que uma águia"+ "<br>" +
+"Sei que mais fundo eu posso ir"+ "<br>" +
+"Aonde quer que eu vá"+ "<br>" +
+"Sei que lá, Deus Esta"+ "<br><br>" +
+"Vou correr"+ "<br>" +
+"Milhas e milhas sem me cansar"+ "<br><br>" +
+"Vou voar"+ "<br>" +
+"Muito mais alto do que possa alcançar"+ "<br><br>" +
+"Vou estar"+ "<br>" +
+"Em Tua presença, sei que vou estar"+ "<br><br>" +
+"Te adorar"+ "<br>" +
+"Eu quero minha vida sempre te entregar"+ "<br><br>" +
+"Pra estar"+ "<br>" +
+"No Santo do Santo, Lugar" );
+}else if(text == "Volte"){
+    mostra("<h3>"+"Musica:"+"</h3>"+"Volte"+ "<br><br>" +
+
+"Qual o valor que você dá a sua vida,"+ "<br>" +
+"Qual decisão que você toma qual a medida"+ "<br>" +
+"O que você tem, que tem valor"+ "<br>" +
+"O que você faz diante do Senhor"+ "<br>" +
+"Como você age quando não há mais saída"+ "<br><br>" +
+"O Desespero toma conta de você"+ "<br>" +
+"Você já não sabe mais o que fazer"+ "<br>" +
+"Anda Sozinho sem saber pra Onde Ir"+ "<br><br>" +
+"Volte você tem valor diante de Jesus"+ "<br>" +
+"Ele morreu por você naquela Cruz"+ "<br>" +
+"Porque ficar ai Jogado nesse chão"+ "<br>" +
+"Se Ele está estendendo sua Mão" );
+}
+else if(text == "Posso Confiar"){
+    mostra("<h3>"+"Musica:"+"</h3>"+"Psso Confiar"+ "<br><br>" +
+
+"Pela cidade eu te vejo não em outdoor,"+ "<br>" +
+"pelas ruas onde ando não me sinto só"+ "<br>" +
+"Comigo sei que você está"+ "<br><br>" +
+"Pelas ruas onde ando a Escuridão"+ "<br>" +
+"Tenta me cercar me derrubando ao chão"+ "<br>" +
+"Comigo sei que você está"+ "<br><br>" +
+"Sei que posso confiar"+ "<br>" +
+"O teu amor nunca vai falhar "+ "<br>" +
+"Creio em Ti o teu amor não tera fim"+ "<br><br>" +
+"Sei que posso confiar"+ "<br>" +
+"Sei que posso confiar"+ "<br><br>" +
+"O teu amor nunca vai falhar "+ "<br>" +
+"Creio em Ti "+ "<br>" +
+"Creio em Ti "+ "<br><br>" +
+"O teu amor não tera fim "+ "<br>" +
+"Sei que posso confiar"+ "<br>" +
+"Sei que posso confiar"+ "<br>");
+}
+} 	
+
+</script>
+
